@@ -49,9 +49,20 @@
 //titles[0].style.fontweight = "bold";
 //title[0].style.color = "green";
 
+var headerTitle = document.getElementById("header-title");
+var header = document.getElementById(main - header);
+//header-title.style.fontweight = "bold";
 var titles = document.querySelectorAll(".title");
 console.log(titles);
 titles[0].style.fontweight = "bold";
+titles[1].style.fontweight = "bold";
 titles[0].style.color = "green";
+//titles[2].style.fontweight = "bold";
 
-
+var items = document.getElementsByClassName("list-group-item");
+console.log(items);
+items[0].style.fontweight = "bold";
+items[1].style.fontweight = "bold";
+items[2].style.fontweight = "bold";
+items[3].style.fontweight = "bold";
+s;
