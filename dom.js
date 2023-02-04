@@ -53,3 +53,9 @@ var titles = document.querySelectorAll(".title");
 console.log(titles);
 titles[0].style.fontweight = "bold";
 titles[0].style.color = "green";
+
+var title = document.getElementById("title");
+console.log("title");
+Title.style.fontWeight = "bold";
+
+
