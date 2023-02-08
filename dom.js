@@ -65,4 +65,11 @@ items[0].style.fontweight = "bold";
 items[1].style.fontweight = "bold";
 items[2].style.fontweight = "bold";
 items[3].style.fontweight = "bold";
-s;
+
+var li = document.getElementsByClassName("li");
+li[4] = textcontent = "Item 5";
+
+var li = document.getElementsByTagName("li");
+//li[4].textcontent = " Item 5";
+li[4].style.backgroundColor = "transpernt";
+li[4].style.border = "solid 2px ";
