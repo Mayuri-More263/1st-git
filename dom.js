@@ -74,6 +74,11 @@
 // li[4].style.backgroundColor = "transpernt";
 // li[4].style.border = "solid 2px ";
 
-var li = document.querySelectorAll("li");
-li[1].style.backgroundColor = "green";
-li[2].style.textcontent = "invisible";
+// var li = document.querySelectorAll("li");
+// li[1].style.backgroundColor = "green";
+// li[2].style.textcontent = "invisible";
+
+var odd = document.querySelectorAll("li:nth-child(odd)");
+for (var i = 0; i < odd.length; i++) {
+  odd[i].style.backgroundColor = "green";
+}
