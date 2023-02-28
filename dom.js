@@ -78,7 +78,72 @@
 // li[1].style.backgroundColor = "green";
 // li[2].style.textcontent = "invisible";
 
-var odd = document.querySelectorAll("li:nth-child(odd)");
-for (var i = 0; i < odd.length; i++) {
-  odd[i].style.backgroundColor = "green";
-}
+// var odd = document.querySelectorAll("li:nth-child(odd)");
+// for (var i = 0; i < odd.length; i++) {
+//   odd[i].style.backgroundColor = "green";
+// }
+
+//TRAVERSING THE DOM //
+var itemlist = document.querySelector("#items");
+// parentNode
+// console.log(itemlist.parentNode);
+// itemlist.parentNode.style.backgroundColor = "#f4f4f4";
+// console.log(itemlist.parentNode.parentNode.parentNode);
+
+// //PARENTELEMENT
+// console.log(itemlist.parentElement);
+// itemlist.parentElement.style.backgroundColor = "#f4f4f4";
+// console.log(itemlist.parentElement.parentElement.parentElement);
+
+// //CHILDNODES we getting node list basically an array its  giving different node list
+// // text node represented line break
+// console.log(itemlist.childNodes);
+// console.log(itemlist.children); //only shows children elements
+// console.log(itemlist.children[1]); // to acess specific child
+// itemlist.children[1].style.backgroundColor = "pink";
+
+// // //FIRSTCHILD
+// console.log(itemlist.firstChild);
+// // //FIRSTELEMENTCHILD
+// console.log(itemlist.firstElementChild);
+// itemlist.firstElementChild.textContent = "HELLO";
+
+//LASTCHILD//
+// console.log(itemlist.lastChild);
+// //LASTELEMENTCHILD
+// console.log(itemlist.lastElementChild);
+// itemlist.lastElementChild.textContent = "HELLO";
+
+//NEXTSIBLING//
+// console.log(itemlist.nextSibling);
+// //nextelementsibling
+// console.log(itemlist.nextElementSibling);
+
+//previousesibling
+// console.log(itemlist.previousSibling);
+// //PREVIOUDEELEMENTSIBLING
+// console.log(itemlist.previousElementSibling);
+// itemlist.previousElementSibling.style.color = "green";
+
+//* CREATEELEMENT //
+// create a div
+var newDiv = document.createElement("div");
+//add class
+newDiv.className = "hello";
+// add id
+newDiv.id = "hello 1";
+//add attr
+newDiv.setAttribute("titel", "hello Div");
+// create text node
+var newDivText = document.createTextNode("HELLO WORLD");
+//add text to div
+newDiv.appendChild(newDivText);
+
+var container = document.querySelector("header.container");
+var h1 = document.querySelector("header h1");
+
+console.log(newDiv);
+
+newDiv.style.fontSize = "30px";
+
+container.insertBefore(newDiv, h1);
